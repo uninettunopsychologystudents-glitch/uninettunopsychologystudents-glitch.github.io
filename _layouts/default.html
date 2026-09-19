@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }} — {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <a class="salta" href="#contenuto">Vai al contenuto</a>
+  <div class="pagina">
+    <nav class="menu" aria-label="Menu principale">
+      <a href="{{ '/' | relative_url }}"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/faq/' | relative_url }}"{% if page.url == "/faq/" %} aria-current="page"{% endif %}>FAQ</a>
+    </nav>
+
+    <main id="contenuto">
+      {{ content }}
+    </main>
+
+    <footer class="piede">
+      Community indipendente di studenti Uninettuno — Facoltà di Psicologia
+    </footer>
+  </div>
+</body>
+</html>

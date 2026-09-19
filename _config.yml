@@ -1,0 +1,7 @@
+title: "Studenti di Psicologia — Uninettuno"
+description: "Community indipendente di studenti Uninettuno, Facoltà di Psicologia. Confronto tra pari su esami e materiali, accesso verificato tramite email istituzionale."
+lang: it
+url: "https://uninettunopsychologystudents-glitch.github.io"
+baseurl: ""
+plugins:
+  - jekyll-sitemap

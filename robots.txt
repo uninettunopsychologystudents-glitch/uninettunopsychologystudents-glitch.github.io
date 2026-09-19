@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uninettunopsychologystudents-glitch.github.io/sitemap.xml
